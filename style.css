@@ -1,0 +1,53 @@
+
+body {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.image img {
+    width: 100px;
+    height: 100px;
+    display: none; /* Oculta el spinner inicialmente */
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(117, 22, 151);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer { 
+    color: #080707; 
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+/* Animación para el spinner */
+.spin {
+    animation: spin 3s linear infinite;
+}
+
+/* Definición de la animación */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
